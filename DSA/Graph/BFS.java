@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Queue;
 
 public class BFS {
-    static ArrayList<Integer> bfs(int v,ArrayList<ArrayList<Integer>> ad){
+    static ArrayList<Integer> bfs(int v,ArrayList<ArrayList<Integer>> adj){
         ArrayList<Integer> bfs=new ArrayList<>();
         boolean vis[]=new  boolean[v];
         Queue <Integer> q=new ArrayList<>();
@@ -10,7 +10,7 @@ public class BFS {
         vis[0]=true;
         while(!q.isEmpty()){
             Integer node=q.poll();
-            bbfs.add(node);
+            bfs.add(node);
             for(Integer it: adj.get(node)){
                 if(vis[it]==false){
                     visit[it]=true;

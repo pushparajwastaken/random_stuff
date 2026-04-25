@@ -1,5 +1,6 @@
-package DSA.Graph;
+public class DFS{
 
+    
 public function dfsRec(adj, visited, s, res) {
     visited[s] = true;
     res.push(s);
@@ -48,4 +49,6 @@ for (let i = 0; i < res.length; i++) {
     process.stdout.write(res[i] + " ");
 } {
     
+}
+
 }
